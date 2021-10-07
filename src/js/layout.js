@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
+import { contenido } from "./views/contenido";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
@@ -33,6 +34,9 @@ const Layout = () => {
 						</Route>
 						<Route>
 							<h1>Not found!</h1>
+						</Route>
+						<Route exact path="/contenido">
+							<contenido />
 						</Route>
 					</Switch>
 					<Footer />
